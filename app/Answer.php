@@ -51,7 +51,7 @@ class Answer extends Model
         return $this->isBest();
     }
 
-    public function isBest(Type $var = null)
+    public function isBest()
     {
         return $this->id == $this->question->best_answer_id;
     }

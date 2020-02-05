@@ -30,7 +30,7 @@
                                 class="{{ $answer->status }} mt-2"
                                 >
                                 <i class="fa fa-check fa-2x"></i>
-                            </a> 
+                                </a> 
                                 @endif
                             @endcan
                             <form id="accept-answer-{{ $answer->id }}" action="{{ route('answers.accept', $answer->id) }}" method="POST" style="display:none;">
